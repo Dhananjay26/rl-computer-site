@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>RL Computer Institute</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f6f8fb;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ---------------- NAV ---------------- */
+nav{
+    background:#1b263b;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    position:sticky;
+    top:0;
+}
+
+nav h2{
+    color:#4cc9f0;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+/* ---------------- HERO ---------------- */
+.hero{
+    background:linear-gradient(120deg,#4361ee,#3a0ca3);
+    height:90vh;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+.btn{
+    background:#4cc9f0;
+    padding:12px 25px;
+    border-radius:5px;
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+}
+
+/* ---------------- SECTION ---------------- */
+section{
+    padding:70px 30px;
+}
+
+.title{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:40px;
+    color:#3a0ca3;
+}
+
+/* ---------------- CARDS ---------------- */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.price{
+    color:#e63946;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+/* ---------------- ABOUT ---------------- */
+.about{
+    background:#e9ecef;
+    text-align:center;
+}
+
+/* ---------------- CONTACT ---------------- */
+form{
+    max-width:500px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,textarea{
+    padding:12px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+button{
+    background:#4361ee;
+    color:white;
+    border:none;
+    padding:12px;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer{
+    background:#1b263b;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media(max-width:768px){
+    .hero h1{
+        font-size:30px;
+    }
+}
+.logo{
+    height:55px;
+}
+
+
+</style>
+</head>
+
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <img src="logo.jpeg" class="logo" alt="RL Computer Logo">
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+
+
+<!-- HERO -->
+<div class="hero">
+    <div>
+        <h1>Build Your Career With Skills That Matter</h1>
+        <p>Programming • Data Science • Accounting • Design • Web Development</p>
+        <a href="#courses" class="btn">View Courses</a>
+    </div>
+</div>
+
+
+<!-- ABOUT -->
+<section id="about" class="about">
+    <h2 class="title">About RL Computer Institute</h2>
+    <p>
+        We provide practical training with live projects, job assistance and real-world skills.
+        Our mission is simple: stop wasting time on theory and get students job-ready.
+    </p>
+</section>
+
+
+<!-- COURSES -->
+<section id="courses">
+<h2 class="title">Popular Courses</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Full Stack MERN</h3>
+<p>MongoDB, Express, React, Node</p>
+<p>Duration: 6 Months</p>
+<p class="price">₹ 35,500</p>
+</div>
+
+<div class="card">
+<h3>Data Science</h3>
+<p>Python, ML, AI, TensorFlow</p>
+<p>Duration: 12 Months</p>
+<p class="price">₹ 45,000</p>
+</div>
+
+<div class="card">
+<h3>Software Developer (SDE)</h3>
+<p>DSA + Java + System Design</p>
+<p>Duration: 12 Months</p>
+<p class="price">₹ 45,000</p>
+</div>
+
+<div class="card">
+<h3>Tally Prime + GST</h3>
+<p>Accounting + Taxation</p>
+<p>Duration: 3 Months</p>
+<p class="price">₹ 13,500</p>
+</div>
+
+<div class="card">
+<h3>Graphic Design</h3>
+<p>Photoshop, Illustrator, CorelDraw</p>
+<p>Duration: 3 Months</p>
+<p class="price">₹ 18,000</p>
+</div>
+
+<div class="card">
+<h3>Advance Excel</h3>
+<p>xlookup,Conditional Formating, pivot, Analytics, Dashboard</p>
+<p>Duration: 2 Months</p>
+<p class="price">₹ 10,000</p>
+</div>
+
+<div class="card">
+<h3>Programming (C)</h3>
+<p>Strong coding foundation</p>
+<p>Duration: 3-4 Months</p>
+<p class="price">₹ 5000</p>
+</div>
+<div class="card">
+<h3>Programming (C++)</h3>
+<p>Strong coding foundation</p>
+<p>Duration: 3-4 Months</p>
+<p class="price">₹ 7500</p>
+</div><div class="card">
+<h3>Programming (JAVA)</h3>
+<p>Strong coding foundation</p>
+<p>Duration: 3-4 Months</p>
+<p class="price">₹ 12000</p>
+</div>
+<div class="card">
+<h3>Video Editing</h3>
+<p>Premiere Pro/ DaVinci Resolve</p>
+<p>Duration: 2 Months</p>
+<p class="price">₹ 10,000</p>
+</div>
+
+</div>
+</section>
+
+
+<!-- FEATURES -->
+<section>
+<h2 class="title">Why Students Choose Us</h2>
+
+<div class="grid">
+
+<div class="card">✔ Live Projects</div>
+<div class="card">✔ Job Assistance</div>
+<div class="card">✔ Affordable Fees</div>
+<div class="card">✔ Experienced Trainers</div>
+<div class="card">✔ Certificate Courses</div>
+<div class="card">✔ Practical Labs</div>
+
+</div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2 class="title">Contact Us</h2>
+
+    <div class="grid" style="max-width:600px;margin:auto;">
+
+        <div class="card">
+            <h3>📞 Call Us</h3>
+            <p>+91 9928509609</p>
+	<p>+91 9001353879</p>
+        </div>
+
+        <div class="card">
+            <h3>📧 Email Us</h3>
+            <p>rlcomputer.com@gmail.com</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+<footer>
+© 2026 RL Computer Institute | Founder: J.K. Prajapat | All Rights Reserved
+</footer>
+
+</body>
+</html>
